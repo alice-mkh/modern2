@@ -1,0 +1,222 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+/* ===== menulist.css ===================================================
+  == Styles used by the XUL menulist element.
+  ======================================================================= */
+
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+@namespace html url("http://www.w3.org/1999/xhtml"); /* namespace for HTML elements */
+
+/* :::::::::: menulist :::::::::: */
+
+menulist {
+  margin: 2px;
+  padding: 0px;
+  min-height: 19px;
+  color: #000000;
+  font: message-box;
+
+  border-image: url("chrome://global/skin/menulist/mlist.gif") 12 24 9 14 fill;
+  border-width: 4px 5px;
+  border-style: solid;
+  border-image-width: 12px 24px 9px 14px;
+}
+
+.menulist-label {
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+  -moz-margin-start: 0px !important;
+  -moz-margin-end: 2px !important;
+}
+
+.menulist-description {
+  font-style: italic;
+  color: #5D616E;
+  -moz-margin-start: 1em !important;
+}
+
+.menulist-icon {
+  -moz-margin-end: 2px;
+}
+
+.menulist-label-box {
+  -moz-box-align: center;
+  -moz-box-pack: center;
+  -moz-padding-start: 8px;
+}
+
+.menulist-dropmarker > .dropmarker-icon {
+  padding-right: 3px;
+}
+
+/* ..... focused state ..... */
+
+menulist:focus {
+  border-image-source: url("chrome://global/skin/menulist/mlist-focus.gif");
+}
+
+/* ..... active state ..... */
+  
+menulist[open="true"] {
+  border-image-source: url("chrome://global/skin/menulist/mlist-act.gif");
+  color: #FFFFFF;
+}
+
+menulist[open="true"]:focus {
+  border-image-source: url("chrome://global/skin/menulist/mlist-act-focus.gif");
+}
+
+/* ..... disabled state ..... */
+
+menulist[disabled="true"] {
+  border-image-source: url("chrome://global/skin/menulist/mlist-dis.gif") !important;
+  color: #7F8997 !important;
+}
+
+menulist[disabled="true"]:focus {
+  border-image-source: url("chrome://global/skin/menulist/mlist-dis-focus.gif") !important;
+}
+
+/* ::::: editable menulists ::::: */
+
+.menulist-editable-box {
+  border: 1px solid #313948;
+  border-right: none;
+  background-color: #FFFFFF;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  -moz-padding-start: 2px;
+  -moz-padding-end: 0px;
+  margin: -2px 6px -2px -4px;
+}
+
+menulist[disabled="true"] .menulist-editable-box {
+  background-color: #B4C3D4;
+  border-color: #727D8E;
+}
+
+html|*.menulist-editable-input {
+  margin: 0px !important;
+  border: none !important;
+  padding: 0px !important;
+  background: inherit;
+  font: inherit;
+}
+
+menulist[focused="true"] {
+  outline: 2px solid #96A7BD;
+  -moz-outline-radius: 0px 6px 9px 0px;
+}
+
+/* ::::: compact menulists ::::: */
+
+.menulist-compact {
+  -moz-box-align: center;
+  -moz-box-pack: center;
+  margin: 0;
+  border: 2px solid !important;
+  -moz-border-top-colors: #314152 #F7F7F7 !important;
+  -moz-border-right-colors: #314152 #8CA2A5 !important;
+  -moz-border-bottom-colors: #314152 #8CA2A5 !important;
+  -moz-border-left-colors: #314152 #F7F7F7 !important;
+  border-radius: 0;
+  padding: 1px;
+  min-height: 0px;
+  background-color: #D6DFDF;
+  color: #000000;
+  background-clip: border-box !important;
+  outline: none !important;
+}
+
+.menulist-compact > .menulist-label {
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+  -moz-margin-start: 0px !important;
+  -moz-margin-end: 3px !important;
+  text-align: end;
+}  
+
+.menulist-compact > .menulist-dropmarker {
+  border: none;
+  background: transparent;
+}
+
+.menulist-compact > .menulist-dropmarker,
+.menulist-compact[open="true"] > .menulist-dropmarker {
+  list-style-image: url("chrome://global/skin/menulist/mlist-compact-arrow.gif");
+  margin-left: 2px;
+}
+
+.menulist-compact:focus {
+  border-radius: 0;
+}
+
+.menulist-compact:focus {
+  -moz-border-top-colors: #000000 #F7F7F7 !important;
+  -moz-border-right-colors: #000000 #8CA2A5 !important;
+  -moz-border-bottom-colors: #000000 #8CA2A5 !important;
+  -moz-border-left-colors: #000000 #F7F7F7 !important;
+}
+
+.menulist-compact[open="true"] {
+  -moz-border-top-colors: #314152 #808080 !important;
+  -moz-border-right-colors: #314152 #808080 !important;
+  -moz-border-bottom-colors: #314152 #808080 !important;
+  -moz-border-left-colors: #314152 #808080 !important;
+  background-color: #949EA5;
+}
+
+.menulist-compact:focus[open="true"] {
+  -moz-border-top-colors: #000000 #808080 !important;
+  -moz-border-right-colors: #000000 #808080 !important;
+  -moz-border-bottom-colors: #000000 #808080 !important;
+  -moz-border-left-colors: #000000 #808080 !important;
+}
+
+/* ::::: menulist popup and contents :::::: */
+
+
+/* ..... menu/menuitem ..... */
+
+menulist menupopup menuitem,
+menulist menupopup menu
+{
+  padding-top: 1px;
+  padding-right: 12px;
+  padding-bottom: 1px;
+  min-width: 0px;
+  max-width: none !important;
+  color: #000000;
+  font: message-box;
+}
+
+menulist menupopup menuitem[menuactive="true"] {
+  background-color: #465B75;
+  color: #FFFFFF;
+}
+
+/* ..... menuitem selected state ..... */
+
+menulist menupopup menuitem[selected="true"] {
+  list-style-image: url("chrome://global/skin/menu/menu-check.gif");
+}
+
+menulist menupopup menuitem[menuactive="true"][selected="true"] {
+  list-style-image: url("chrome://global/skin/menu/menu-check-hov.gif");
+}
+
+/* ..... menuseparator ..... */
+
+menulist > menupopup > menuseparator {
+  border-top: 1px solid #919FA3;
+  border-bottom: 1px solid #E6EFEE;
+}
+
+/* ..... auto-repeat button ..... */
+
+menulist > menupopup > arrowscrollbox > vbox > autorepeatbutton:hover {
+  border: 1px inset #B2BFBF;
+  background-color: #B2BFBF;
+}

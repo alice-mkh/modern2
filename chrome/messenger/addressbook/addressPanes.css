@@ -1,0 +1,70 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+/* ===== addressPanes.css ================================================
+  == Styles for directory and address panes.
+  ======================================================================= */
+
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+/* ::::: directory pane icons ::::: */
+
+treechildren::-moz-tree-image(DirCol) {
+  -moz-margin-end: 2px;
+  list-style-image: url("chrome://messenger/skin/addressbook/icons/myaddrbk.gif");
+}
+
+treechildren::-moz-tree-image(DirCol, IsMailList-true) {
+  list-style-image: url("chrome://messenger/skin/addressbook/icons/list.gif");
+}
+
+treechildren::-moz-tree-image(DirCol, IsRemote-true) {
+  list-style-image: url("chrome://messenger/skin/addressbook/icons/directory.gif");
+}
+
+treechildren::-moz-tree-image(DirCol, IsRemote-true, IsSecure-true) {
+  list-style-image: url("chrome://messenger/skin/addressbook/icons/secure-directory.gif");
+}
+
+#dirTree [sortDirection="ascending"] {
+  list-style-image: none;
+}
+
+#dirTree [sortDirection="descending"] {
+  list-style-image: none;
+}
+
+#DirCol {
+  background-color: #5C7794;
+  color: #FFFFFF;
+  font-weight: bold;
+
+  padding: 0px 0px 2px 18px;
+
+  border: none;
+  border-top: 1px solid #92ABC9;
+  border-bottom: 1px solid black;
+
+  -moz-box-align: center;
+}
+
+#dirTree {
+  border-bottom: 2px solid black;
+  -moz-border-bottom-colors: #C6D3D6 #7B969C;
+}
+
+#dirTree-splitter {
+  border-right: none;
+}
+
+#results-splitter {
+  border-left: none !important;
+  -moz-border-top-colors: #7B969C #C6D3D6 !important;
+}
+
+#abResultsTree {
+  border-left: 2px solid;
+  -moz-border-left-colors: #63717B #000000;
+  border-bottom: none !important;
+}

@@ -1,0 +1,32 @@
+<svg height="0" xmlns="http://www.w3.org/2000/svg">
+  <filter id="white" color-interpolation-filters="sRGB">
+    <feFlood flood-color="white" flood-opacity="1" result="tint"/>
+    <feComposite in="tint" in2="SourceGraphic" operator="in"/>
+  </filter>
+
+  <filter id="monochrome-icon-filter"
+              color-interpolation-filters="sRGB"
+              filterUnits="objectBoundingBox"
+              x="-6.25%" y="-6.25%" width="112.5%" height="112.5%">
+
+        <!-- Create a mask from the ARGB input. Result: iconMask -->
+        <!-- "resultAlpha = invertAndThreshold(luminance(input.rgb)) * input.a" -->
+        <feColorMatrix type="luminanceToAlpha"/>
+        <feColorMatrix type="matrix"
+                        values="0 0 0 0 0
+                                0 0 0 0 0
+                                0 0 0 0 0
+                                0 0 0 -5 4.6"/>
+        <feComposite operator="in" in2="SourceAlpha" result="iconMask"/>
+    
+        <!-- Create the gray foreground "gradient". -->
+        <feFlood flood-color="#324e6a"/>
+        <feGaussianBlur stdDeviation="3"/>
+
+        <!-- Create the final icon by masking gradient + inner shadow with iconMask.
+             Result: grayIcon -->
+        <feComposite operator="in" in2="iconMask" result="grayIcon"/>
+    
+        <feComposite operator="over" in="grayIcon"/>
+    </filter>
+</svg>

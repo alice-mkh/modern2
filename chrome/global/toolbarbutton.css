@@ -1,0 +1,137 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+/* ===== toolbarbutton.css ==============================================
+  == Styles used by XUL toolbarbutton elements.
+  ======================================================================= */
+
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+/* ::::: toolbarbutton ::::: */
+
+toolbarbutton {
+  -moz-box-align: center;
+  -moz-box-pack: center;
+  border: 1px solid transparent;
+  padding: 1px 2px;
+  font: message-box;
+}
+
+.toolbarbutton-icon[label]:not([label=""]),
+.toolbarbutton-icon[type="menu"] {
+  -moz-margin-end: 2px;
+}
+
+.toolbarbutton-text {
+  margin: 0px !important;
+  text-align: center;
+}
+
+.tabbable {
+  -moz-user-focus: normal !important;
+}
+
+toolbarbutton:focus,
+toolbarbutton:hover {
+  border: 1px outset #5C7794;
+}
+
+toolbarbutton:hover:active,
+toolbarbutton[open="true"] {
+  border: 1px inset #5C7794;
+  padding-top: 2px;
+  padding-bottom: 0px;
+  -moz-padding-start: 3px;
+  -moz-padding-end: 1px;
+}
+
+toolbarbutton[disabled="true"] {
+  border-color: transparent !important;
+  padding: 1px 2px !important;
+  color: #9399AB !important;
+}
+
+/* ..... checked state ..... */
+
+toolbarbutton[checked="true"] {
+  border: 1px inset #5C7794 !important;
+  color: #EFF1F4;
+}
+
+toolbarbutton[checked="true"]:hover:active {
+  padding: 1px 2px;
+}
+
+/* ::::: toolbarbutton menu ::::: */
+
+.toolbarbutton-menu-dropmarker {
+  list-style-image: url("chrome://communicator/skin/toolbar/mbtn-tb-arrow.gif");
+  -moz-image-region: auto; /* cut off inheritance */
+  padding: 0px;
+  border: none !important;
+  background-color: transparent !important;
+}
+
+.toolbarbutton-menu-dropmarker[disabled="true"] {
+  list-style-image: url("chrome://communicator/skin/toolbar/mbtn-tb-arrow-dis.gif") !important;
+}
+
+toolbarbutton:hover .toolbarbutton-menu-dropmarker {
+  list-style-image: url("chrome://communicator/skin/toolbar/mbtn-tb-arrow-hov.gif");
+}
+
+toolbarbutton:hover:active .toolbarbutton-menu-dropmarker,
+toolbarbutton[open="true"] .toolbarbutton-menu-dropmarker {
+  list-style-image: url("chrome://communicator/skin/toolbar/mbtn-tb-arrow-act.gif");
+}
+
+/* ::::: toolbarbutton menu-button ::::: */
+
+.toolbarbutton-menubutton-button {
+  font: inherit;
+}
+
+/* ..... dropmarker ..... */
+
+.toolbarbutton-menubutton-dropmarker {
+  -moz-box-align: center;
+  -moz-box-pack: center;
+
+  margin-top: 24px;
+  margin-bottom: 13px;
+  -moz-margin-start: 29px;
+  -moz-margin-end: 8px;
+
+  padding: 0px;
+  border: none !important;
+  background-color: transparent !important;
+  width: 11px;
+  height: 8px;
+  list-style-image: url("chrome://communicator/skin/toolbar/mbtn1-arrow.gif");
+  -moz-image-region: auto; /* cut off inheritance */
+}
+
+toolbar[mode="icons"] .toolbarbutton-menubutton-dropmarker {
+  margin-top: 24px !important;
+  margin-bottom: 3px !important;
+  -moz-margin-start: 20px !important;
+  -moz-margin-end: 1px !important;
+}
+
+toolbarbutton:hover > .toolbarbutton-menubutton-dropmarker,
+toolbarbutton:hover > stack > .toolbarbutton-menubutton-dropmarker {
+  list-style-image: url("chrome://communicator/skin/toolbar/mbtn1-arrow-hov.gif");
+}
+
+toolbarbutton[open="true"] > .toolbarbutton-menubutton-dropmarker,
+toolbarbutton[open="true"] > stack > .toolbarbutton-menubutton-dropmarker {
+  list-style-image: url("chrome://communicator/skin/toolbar/mbtn1-arrow-act.gif");
+}
+
+toolbarbutton[disabled="true"] > .toolbarbutton-menubutton-dropmarker,
+toolbarbutton[disabled="true"] > stack > .toolbarbutton-menubutton-dropmarker,
+toolbarbutton[disabled="true"]:hover > stack > .toolbarbutton-menubutton-dropmarker
+{
+  list-style-image: none !important;
+}

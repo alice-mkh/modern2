@@ -1,0 +1,211 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+/* ===== toolbar.css ====================================================
+  == Styles used by XUL toolbar-related elements.
+  ======================================================================= */
+
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+/* ::::: toolbar ::::: */
+
+toolbar {
+  min-width: 1px; /* DON'T DELETE!
+    Prevents hiding of scrollbars in browser when window is made smaller.*/
+  min-height: 22px;
+  background-color: #5B7693;
+  color: #FFFFFF;
+  border-bottom: 1px solid #000000;
+}
+
+toolbar > .toolbar-box > .toolbar-holder {
+  border-top: 1px solid #92ABC9;
+  border-left: 1px solid #92ABC9;
+}
+
+/* ::::: menubar ::::: */
+
+menubar,
+toolbar[type="menubar"]{
+  cursor: default;
+  min-width: 1px; /* DON'T DELETE!
+  Prevents hiding of scrollbars in browser when window is made smaller.*/
+  background-color: #B4C3D4;
+
+  border-top: 1px solid #82929C;
+  border-bottom: 1px solid #000000;
+}
+
+menubar > .toolbar-box > .toolbar-holder,
+toolbar[type="menubar"] > .toolbar-box > .toolbar-holder {
+  border-top: none;
+  border-left: 1px solid #D6E7FF;
+}
+
+toolbar menubar,
+toolbar menubar > .toolbar-box > .toolbar-holder {
+  border: none;
+}
+
+/* ::::: toolbargrippy ::::: */
+ 
+toolbargrippy {
+  -moz-binding: url("chrome://global/skin/globalBindingsOld.xml#toolbargrippy") !important;
+
+  width: 12px;
+  background-image: url("chrome://global/skin/toolbar/tbgrip-mid.gif");
+}
+
+.toolbargrippy-top {
+  background-image: url("chrome://global/skin/toolbar/tbgrip-top.gif");
+  height: 3px;
+}
+
+.toolbargrippy-btm {
+  background-image: url("chrome://global/skin/toolbar/tbgrip-btm.gif");
+  height: 8px;
+}
+
+toolbargrippy:hover:active {
+  background-image: url("chrome://global/skin/toolbar/tbgrip-act-mid.gif");
+}
+
+toolbargrippy:hover:active > .toolbargrippy-top {
+  background-image: url("chrome://global/skin/toolbar/tbgrip-act-top.gif");
+}
+
+toolbargrippy:hover:active > .toolbargrippy-btm {
+  background-image: url("chrome://global/skin/toolbar/tbgrip-act-btm.gif");
+}
+
+/* ::::: menubar grippy ::::: */
+
+toolbar[type="menubar"] > .toolbar-box > toolbargrippy,
+menubar > .toolbar-box > toolbargrippy {
+  background-image: url("chrome://global/skin/menu/grip-mbar-mid.gif");
+}
+
+toolbar[type="menubar"] > .toolbar-box > toolbargrippy > .toolbargrippy-top,
+menubar > .toolbar-box > toolbargrippy > .toolbargrippy-top {
+  background-image: url("chrome://global/skin/menu/grip-mbar-top.gif");
+}
+
+toolbar[type="menubar"] > .toolbar-box > toolbargrippy > .toolbargrippy-btm,
+menubar > .toolbar-box > toolbargrippy > .toolbargrippy-btm {
+  background-image: url("chrome://global/skin/menu/grip-mbar-btm.gif");
+}
+
+toolbar[type="menubar"] > .toolbar-box > toolbargrippy:hover:active,
+menubar > .toolbar-box > toolbargrippy:hover:active {
+  background-image: url("chrome://global/skin/menu/grip-mbar-mid-act.gif");
+}
+
+toolbar[type="menubar"] > .toolbar-box > toolbargrippy:hover:active > .toolbargrippy-top,
+menubar > .toolbar-box > toolbargrippy:hover:active > .toolbargrippy-top {
+  background-image: url("chrome://global/skin/menu/grip-mbar-top-act.gif");
+}
+
+toolbar[type="menubar"] > .toolbar-box > toolbargrippy:hover:active > .toolbargrippy-btm,
+menubar > .toolbar-box > toolbargrippy:hover:active > .toolbargrippy-btm {
+  background-image: url("chrome://global/skin/menu/grip-mbar-btm-act.gif");
+}
+
+/* ::::: collapsed toolbargrippy and tray ::::: */
+
+toolbargrippy[tbgrippy-collapsed="true"] {
+  -moz-binding: url("chrome://global/skin/globalBindingsOld.xml#toolbargrippy-collapsed") !important;
+  width: 200px;
+  background-image: none;
+}
+
+toolbargrippy[tbgrippy-collapsed="true"] > .toolbargrippy-collapsed-left {
+  width: 12px;
+  background-image: url("chrome://global/skin/toolbar/tbgrip-clps.gif");
+}
+
+toolbargrippy[tbgrippy-collapsed="true"] > .toolbargrippy-collapsed-context {
+  border: 1px outset #5B7693;
+  background-color: #5B7693;
+}
+
+toolbargrippy[tbgrippy-collapsed="true"]:hover:active > .toolbargrippy-collapsed-left {
+  background-image: url("chrome://global/skin/toolbar/tbgrip-clps-act.gif");
+}
+
+toolbargrippy[tbgrippy-collapsed="true"]:hover:active > .toolbargrippy-collapsed-context {
+  border-style: inset;
+}
+
+.collapsed-tray-holder {
+  border-bottom: 1px solid #000000;
+  height: 11px;
+  background-color: #5B7693;
+}
+
+/* ::::: toolbar decorations ::::: */
+
+toolbarseparator { 
+  margin: 2px 0.2em 2px 0.2em;
+  border-left: 1px solid #425973;
+  border-right: 1px solid #92ABC9;
+  width: 1px;
+}
+
+toolbarspacer {
+  width: 15px;
+}
+
+/* ::::: toolbarpaletteitem ::::: */
+
+toolbarpaletteitem {
+  cursor: grab;
+}
+
+.toolbarpaletteitem-box[type="spacer"],
+.toolbarpaletteitem-box[type="spring"] {
+  border: 1px solid #808080;
+  background-color: #F0F0F0 !important;
+}
+
+toolbarpaletteitem[place="toolbar"] > toolbarspacer {
+  width: 11px;
+}
+
+.toolbarpaletteitem-box[type="separator"][place="palette"] {
+  width: 2px;
+  height: 50px;
+}
+
+.toolbarpaletteitem-box[type="splitter"][place="palette"] {
+  width: 8px;
+  height: 50px;
+}
+
+.toolbarpaletteitem-box[type="spacer"][place="palette"],
+.toolbarpaletteitem-box[type="spring"][place="palette"] {
+  margin-bottom: 2px;
+  width: 50px;
+  height: 50px;
+}
+
+.toolbarpaletteitem-box[type="spring"][place] {
+  background: url("chrome://global/skin/toolbar/spring.png") no-repeat center;
+}
+
+/* ..... drag and drop feedback ..... */
+
+toolbarpaletteitem[place="toolbar"] {
+  margin-left: -2px;
+  margin-right: -2px;
+  border-left: 2px solid transparent;
+  border-right: 2px solid transparent;
+}
+
+toolbarpaletteitem[dragover="left"] {
+  border-left-color: #000000;
+}
+
+toolbarpaletteitem[dragover="right"] {
+  border-right-color: #000000;
+}

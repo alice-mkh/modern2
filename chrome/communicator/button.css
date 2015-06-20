@@ -1,0 +1,99 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+
+/* ==== button.css ==========================================================
+   == Styles for special buttons in the Communicator suite.
+   ========================================================================== */
+
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+/* ::::: standard toolbar buttons ::::: */
+
+.button-toolbar {
+  -moz-user-focus: ignore !important;
+  margin: 0px;
+}
+
+/* ::::: large toolbar buttons ::::: */
+
+.toolbarbutton-1 {
+  -moz-user-focus: ignore;
+  margin: 3px 1px 1px 1px;
+  border: none;
+  min-width: 52px;
+}
+
+toolbar[mode="icons"] .toolbarbutton-1 {
+  min-width: 0px;
+}
+
+toolbar:not([labelalign="end"]) .toolbarbutton-1 {
+  text-shadow: 1px 1px #394B6E;
+}
+
+toolbar[mode="text"] .toolbarbutton-1,
+toolbar[labelalign="end"] .toolbarbutton-1 {
+  color: inherit;
+  font-size: 100%;
+  padding: 0px 2px !important;
+}
+
+toolbar[iconsize="small"] .toolbarbutton-1 {
+  border: 1px solid transparent !important;
+}
+
+.toolbarbutton-1,
+.toolbarbutton-1[type="menu-button"] > .toolbarbutton-menubutton-stack 
+  > .toolbarbutton-menubutton-button,
+.toolbarbutton-1[type="menu-button"] > .toolbarbutton-menubutton-button
+{
+  -moz-box-orient: vertical;
+  -moz-box-pack: center;
+  border: none !important;
+  padding: 0px !important;
+}
+
+.toolbarbutton-1 .toolbarbutton-text {
+  min-width: 33px;
+}
+
+.toolbarbutton-1:hover:active {
+  color: #D0E7E7;
+}
+
+.toolbarbutton-1[disabled="true"],
+.toolbarbutton-1[disabled="true"] toolbarbutton {
+  text-shadow: none !important;
+  color: #394B6E !important;
+}
+
+.toolbarbutton-1[type="menu"] > .toolbarbutton-menu-dropmarker {
+  display: none;
+}
+
+toolbar[mode="text"] .toolbarbutton-1 {
+  min-width: 46px;
+}
+
+toolbar[mode="text"] .toolbarbutton-1,
+toolbar[mode="text"] .toolbarbutton-1[type="menu-button"]
+  > .toolbarbutton-menubutton-button,
+toolbar[labelalign="end"] .toolbarbutton-1,
+toolbar[labelalign="end"] .toolbarbutton-1[type="menu-button"]
+  > .toolbarbutton-menubutton-button {
+  -moz-box-orient: horizontal;
+}
+
+toolbar[mode="icons"] .toolbarbutton-text,
+toolbar[mode="text"] .toolbarbutton-icon {
+  display: none;
+}
+
+toolbar[mode="text"] .toolbarbutton-menubutton-dropmarker,
+toolbar[labelalign="end"]:not([mode="icons"])
+  .toolbarbutton-menubutton-dropmarker {
+  margin: 0px 2px !important;
+}
+

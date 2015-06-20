@@ -1,0 +1,52 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+/* ===== accountCentral.css ==========================================
+  == Styles for the Messenger Account Central panel.
+  ======================================================================= */
+
+@import url("chrome://messenger/skin/");
+
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+#acctCentralGrid {
+  background-color: #FFFFFF;
+}
+
+spacer {
+  max-height: .5em;
+}
+
+spacer.big {
+  max-height: 4em;
+}
+
+/* ::::: rows ::::: */
+
+#acctCentralHeaderRow {
+  margin: 5px;
+  background-color: lightgrey;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.acctCentralRow {
+  -moz-margin-start: 15px;
+}
+
+.acctCentralRowTitleBox {
+  background-color: #ABCDEF;
+  -moz-margin-start: -5px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+/* ::::: links ::::: */
+
+.acctCentralLinkText {
+  color: #0000FF;
+  text-decoration: underline;
+  cursor: pointer;
+}

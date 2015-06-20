@@ -1,0 +1,14 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+#licenseContainer, #pluginList {
+  margin: 2px 4px;
+  border: 2px solid;
+  -moz-border-top-colors: #A8B5C6 #757C8A;
+  -moz-border-right-colors: #E2E8F0 #757C8A;
+  -moz-border-bottom-colors: #E2E8F0 #757C8A;
+  -moz-border-left-colors: #A8B5C6 #757C8A;
+  background-color: #FFFFFF;
+  color: #000000;
+}

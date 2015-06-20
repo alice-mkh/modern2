@@ -1,0 +1,69 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+/* ==== tasksOverlay.css ================================================
+   == Styles used by the the overlay which contains tasks related
+   == content, such as the taskbar and product launcher icons.
+   ====================================================================== */
+
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+/* ::::: communicator product icons ::::: */
+
+#mini-nav {
+  list-style-image: url("chrome://communicator/skin/taskbar/navigator.gif");
+}
+
+#mini-mail {
+  list-style-image: url("chrome://communicator/skin/taskbar/mail.gif");
+}
+
+#mini-mail[BiffState="NewMail"] {
+  list-style-image: url("chrome://communicator/skin/taskbar/mailnew.gif");
+}
+
+#mini-addr {
+  list-style-image: url("chrome://communicator/skin/taskbar/addressbook.gif");
+}
+
+#mini-comp {
+  list-style-image: url("chrome://communicator/skin/taskbar/composer.gif");
+}
+
+/* ::::: component bar ::::: */
+
+#component-bar {
+  padding: 1px 0 0 0;
+}
+
+.taskbutton {
+  margin: 0px;
+  padding: 3px 1px 0px 1px;
+  border: none;
+  min-width: 27px;
+  min-height: 17px;
+  background: url("chrome://communicator/skin/taskbar/taskbtn.gif");
+}
+
+.taskbutton:hover:active {
+  background: url("chrome://communicator/skin/taskbar/taskbtn-act.gif");
+}
+
+.taskbutton:last-child {
+  padding-right: 5px;
+  min-width: 31px;
+  background: url("chrome://communicator/skin/taskbar/taskbtn-rit.gif");
+}
+
+.taskbutton:hover:last-child:active {
+  background: url("chrome://communicator/skin/taskbar/taskbtn-rit-act.gif");
+}
+
+.taskbutton > .button-internal-box {
+  vertical-align: bottom;
+}
+
+.taskbutton .toolbarbutton-text {
+  display: none;
+}

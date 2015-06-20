@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+
+<bindings id="toolbarBindings"
+          xmlns="http://www.mozilla.org/xbl"
+          xmlns:xul="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+          xmlns:xbl="http://www.mozilla.org/xbl">
+
+  <binding id="toolbar-primary"
+           extends="chrome://communicator/content/bindings/toolbar.xml#grippytoolbar-primary">
+    <content>
+      <xul:toolbargrippy xbl:inherits="last-toolbar"
+          tbattr="toolbar-grippy" class="toolbar-primary-grippy"/>
+
+      <xul:box class="toolbar-primary-image-left" orient="vertical">
+        <xul:spring class="toolbar-primary-image-left-top"/>
+        <xul:spring class="toolbar-primary-image-left-mid" flex="1"/>
+        <xul:spring class="toolbar-primary-image-left-btm"/>
+      </xul:box>
+      <xul:box class="toolbar-primary-image-mid toolbar-holder" orient="vertical" flex="1"
+        inherits="collapsed,last-toolbar,orient=tborient,autostretch=tbautostretch">
+        <xul:box class="toolbar-primary-image-mid-mid" flex="1" autostretch="never">
+
+      <xul:hbox class="toolbar-holder toolbar-primary-holder" flex="1" xbl:inherits="mode,iconsize,labelalign">
+        <xul:image class="toolbar-primary-icon" xbl:inherits="mode,iconsize,labelalign"/>
+        <xul:hbox class="toolbar-button-box" flex="1">
+          <children/>
+        </xul:hbox>
+      </xul:hbox>
+
+        </xul:box>
+        <xul:spring class="toolbar-primary-image-mid-btm"/>
+      </xul:box>
+      <xul:box class="toolbar-primary-image-right" orient="vertical">
+        <xul:spring class="toolbar-primary-image-right-top"/>
+        <xul:spring class="toolbar-primary-image-right-mid" flex="1"/>
+        <xul:spring class="toolbar-primary-image-right-btm"/>
+      </xul:box>
+    </content>
+  </binding>
+
+  <binding id="toolbargrippy-primary"
+           extends="chrome://communicator/content/bindings/toolbar.xml#toolbargrippy">
+    <content>
+      <xul:image class="toolbargrippy-arrow"/>
+      <xul:image class="toolbargrippy-texture" flex="1"/>
+    </content>
+  </binding>
+
+</bindings>

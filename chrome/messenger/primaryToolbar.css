@@ -1,0 +1,306 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+/* ===== primaryToolbar.css =============================================
+  == Images for the Mail primary toolbar.
+  ======================================================================= */
+
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+/* ::::: primary toolbar buttons ::::: */
+
+#button-getmsg {
+  list-style-image: url("chrome://messenger/skin/btn1/getmsg.gif");
+}
+
+#button-getmsg:hover {
+  list-style-image: url("chrome://messenger/skin/btn1/getmsg-hov.gif");
+} 
+
+#button-getmsg:hover:active {
+  list-style-image: url("chrome://messenger/skin/btn1/getmsg-act.gif");
+} 
+
+#button-getmsg[disabled] {
+  list-style-image: url("chrome://messenger/skin/btn1/getmsg-dis.gif") !important;
+} 
+
+#button-newmsg {
+  list-style-image: url("chrome://messenger/skin/btn1/newmsg.gif");
+}
+
+#button-newmsg:hover {
+  list-style-image: url("chrome://messenger/skin/btn1/newmsg-hov.gif");
+} 
+
+#button-newmsg:hover:active {
+  list-style-image: url("chrome://messenger/skin/btn1/newmsg-act.gif");
+} 
+
+#button-newmsg[disabled] {
+  list-style-image: url("chrome://messenger/skin/btn1/newmsg-dis.gif") !important;
+} 
+
+#button-reply {
+  list-style-image: url("chrome://messenger/skin/btn1/reply.gif");
+}
+
+#button-reply:hover {
+  list-style-image: url("chrome://messenger/skin/btn1/reply-hov.gif");
+} 
+
+#button-reply:hover:active {
+  list-style-image: url("chrome://messenger/skin/btn1/reply-act.gif");
+} 
+
+#button-reply[disabled] {
+  list-style-image: url("chrome://messenger/skin/btn1/reply-dis.gif") !important;
+} 
+
+#button-replyall {
+  list-style-image: url("chrome://messenger/skin/btn1/replyall.gif");
+}
+
+#button-replyall:hover {
+  list-style-image: url("chrome://messenger/skin/btn1/replyall-hov.gif");
+} 
+
+#button-replyall:hover:active {
+  list-style-image: url("chrome://messenger/skin/btn1/replyall-act.gif");
+} 
+
+#button-replyall[disabled] {
+  list-style-image: url("chrome://messenger/skin/btn1/replyall-dis.gif") !important;
+} 
+
+#button-forward {
+  list-style-image: url("chrome://messenger/skin/btn1/forward.gif");
+}
+
+#button-forward:hover {
+  list-style-image: url("chrome://messenger/skin/btn1/forward-hov.gif");
+} 
+
+#button-forward:hover:active {
+  list-style-image: url("chrome://messenger/skin/btn1/forward-act.gif");
+} 
+
+#button-forward[disabled] {
+  list-style-image: url("chrome://messenger/skin/btn1/forward-dis.gif") !important;
+} 
+
+#button-file {
+  list-style-image: url("chrome://messenger/skin/btn1/file.gif");
+}
+
+#button-file:hover {
+  list-style-image: url("chrome://messenger/skin/btn1/file-hov.gif");
+} 
+
+#button-file:hover:active,
+#button-file[open] {
+  list-style-image: url("chrome://messenger/skin/btn1/file-act.gif");
+} 
+
+#button-file[disabled] {
+  list-style-image: url("chrome://messenger/skin/btn1/file-dis.gif") !important;
+} 
+
+#button-goback {
+  list-style-image: url("chrome://communicator/skin/btn1/back.gif");
+}
+
+#button-goback:hover {
+  list-style-image: url("chrome://communicator/skin/btn1/back-hov.gif");
+}
+
+#button-goback:hover:active {
+  list-style-image: url("chrome://communicator/skin/btn1/back-act.gif");
+}
+
+#button-goback[disabled] {
+  list-style-image: url("chrome://communicator/skin/btn1/back-dis.gif") !important;
+}
+
+#button-goforward {
+  list-style-image: url("chrome://communicator/skin/btn1/forward.gif");
+}
+
+#button-goforward:hover {
+  list-style-image: url("chrome://communicator/skin/btn1/forward-hov.gif");
+}
+
+#button-goforward:hover:active {
+  list-style-image: url("chrome://communicator/skin/btn1/forward-act.gif");
+}
+
+#button-goforward[disabled] {
+  list-style-image: url("chrome://communicator/skin/btn1/forward-dis.gif") !important;
+}
+
+#button-next {
+  list-style-image: url("chrome://messenger/skin/btn1/next.gif");
+}
+
+#button-next:hover {
+  list-style-image: url("chrome://messenger/skin/btn1/next-hov.gif");
+} 
+
+#button-next:hover:active {
+  list-style-image: url("chrome://messenger/skin/btn1/next-act.gif");
+} 
+
+#button-next[disabled] {
+  list-style-image: url("chrome://messenger/skin/btn1/next-dis.gif") !important;
+} 
+
+#button-delete {
+  list-style-image: url("chrome://messenger/skin/btn1/trash.gif");
+}
+
+#button-delete:hover {
+  list-style-image: url("chrome://messenger/skin/btn1/trash-hov.gif");
+} 
+
+#button-delete:hover:active {
+  list-style-image: url("chrome://messenger/skin/btn1/trash-act.gif");
+}
+
+#button-delete[disabled] {
+  list-style-image: url("chrome://messenger/skin/btn1/trash-dis.gif") !important;
+}
+
+toolbarpaletteitem > #button-delete {
+  display: -moz-box;
+}
+
+#button-mark {
+  list-style-image: url("chrome://messenger/skin/btn1/mark.gif");
+}
+
+#button-mark:hover {
+  list-style-image: url("chrome://messenger/skin/btn1/mark-hov.gif");
+} 
+
+#button-mark:hover:active {
+  list-style-image: url("chrome://messenger/skin/btn1/mark-act.gif");
+} 
+
+#button-mark[disabled] {
+  list-style-image: url("chrome://messenger/skin/btn1/mark-dis.gif") !important;
+} 
+
+#button-junk {
+  list-style-image: url("chrome://messenger/skin/btn1/junk.gif");
+}
+
+#button-junk:hover {
+  list-style-image: url("chrome://messenger/skin/btn1/junk-hov.gif");
+} 
+
+#button-junk:hover:active {
+  list-style-image: url("chrome://messenger/skin/btn1/junk-act.gif");
+}
+
+#button-junk[disabled="true"] {
+  list-style-image: url("chrome://messenger/skin/btn1/junk-dis.gif") !important;
+}
+
+#print-button {
+  list-style-image: url("chrome://communicator/skin/btn1/print.gif");
+}
+
+#print-button:hover {
+  list-style-image: url("chrome://communicator/skin/btn1/print-hov.gif");
+}
+
+#print-button:hover:active {
+  list-style-image: url("chrome://communicator/skin/btn1/print-act.gif");
+}
+
+#print-button[disabled="true"] {
+  list-style-image: url("chrome://communicator/skin/btn1/print-dis.gif") !important;
+}
+
+#button-stop {
+  list-style-image: url("chrome://communicator/skin/btn1/stop.gif");
+}
+
+#button-stop:hover {
+  list-style-image: url("chrome://communicator/skin/btn1/stop-hov.gif");
+} 
+
+#button-stop:hover:active {
+  list-style-image: url("chrome://communicator/skin/btn1/stop-act.gif");
+}
+
+#button-stop[disabled="true"] {
+  list-style-image: url("chrome://communicator/skin/btn1/stop-dis.gif") !important;
+}
+
+#sync-button {
+  list-style-image: url("chrome://communicator/skin/sync/sync.gif");
+}
+
+#sync-button:hover {
+  list-style-image: url("chrome://communicator/skin/sync/sync-hov.gif");
+}
+
+#sync-button:hover:active {
+  list-style-image: url("chrome://communicator/skin/sync/sync-act.gif");
+}
+
+#sync-button[disabled="true"] {
+  list-style-image: url("chrome://communicator/skin/sync/sync-dis.gif") !important;
+}
+
+#sync-button[status=active] {
+  list-style-image: url("chrome://communicator/skin/sync/sync-throbber.gif") !important;
+}
+
+#locationFolders {
+  width: 22em;
+}
+
+toolbarpaletteitem[place="palette"] > #folder-location-container > #locationFolders {
+  max-width: 11em;
+}
+
+toolbarpaletteitem[place="palette"] > #search-container > #searchInput {
+  max-width: 11em;
+}
+
+toolbarpaletteitem[place="palette"] > #mailviews-container > #viewPicker {
+  max-width: 11em;
+}
+
+/* ::::: message notification bar style rules ::::: */
+
+.msgNotificationBar {
+  border-bottom: 1px solid;
+  -moz-border-bottom-colors: #000000;
+  -moz-appearance: toolbox;
+  background-color: #C7BC8F;
+  color: black;
+}
+
+.messageImage[value="remoteContent"] {
+  list-style-image: url("chrome://messenger/skin/icons/remote-blocked.png");
+}
+
+.messageImage[value="junkContent"] {
+  list-style-image: url("chrome://messenger/skin/icons/junk.png");
+}
+
+.messageImage[value="phishingContent"] {
+  list-style-image: url("chrome://messenger/skin/icons/phishing.png");
+}
+
+.messageImage[value="mdnContent"] {
+  list-style-image: url("chrome://messenger/skin/icons/info.png");
+}
+
+#viewPickerLabel[disabled="true"] {
+  color: #394B6E !important;
+}

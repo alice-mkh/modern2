@@ -1,0 +1,147 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+@import url("chrome://communicator/skin/");
+@import url("chrome://communicator/skin/sidebar/sidebar.css");
+
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+/* ::::: primary toolbar masthead ::::: */
+
+/* pick up modern's usual primary toolbar style */
+#HelpToolbar {
+  -moz-binding: url("chrome://communicator/skin/toolbar/toolbarBindings.xml#toolbar-primary");
+}
+
+#HelpToolbar toolbarseparator {
+  margin: 9px 0px 0px 0px;
+  border: none;
+  width: 4px;
+  height: 29px;
+  background: url("chrome://communicator/skin/toolbar/separator-prtb.gif") no-repeat;
+}
+
+#HelpToolbar toolbarbutton {
+  -moz-box-orient: vertical;
+  -moz-box-pack: center;
+  border: none !important;
+  padding: 0px !important;
+  margin: 3px 1px 1px 1px;
+}
+
+#HelpToolbar toolbarbutton[type="menu-button"] .toolbarbutton-menubutton-button {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+#findText {
+  margin: 3px 8px 4px 2px;
+  background-color: #ffffff;
+  
+  border-image: url("chrome://navigator/skin/toolbar/urlbar.gif") 4 4 3 3 repeat;
+  border-width: 2px 2px 0px 2px;
+  border-image-width: 4px 4px 3px 3px;
+  background-clip: padding-box !important;
+}
+
+/* hide labels for the toolbar because not all of them are set in help viewer
+ *   make sure we always display the icon though */
+#HelpToolbar .toolbarbutton-text {
+  display: none;
+}
+
+#HelpToolbar .toolbarbutton-icon {
+  display: -moz-box;
+}
+
+#HelpToolbar .toolbarbutton-menubutton-dropmarker {
+  margin-top: 20px;
+  margin-bottom: 0px;
+  -moz-margin-start: 20px;
+  -moz-margin-end: 0px;
+}
+
+#help-sidebar {
+  min-width: 30px;
+  width: 20em;
+  max-width: 25em;
+  background-color: #B4C3D4;
+}
+
+/* ::::: primary toolbar buttons ::::: */
+
+#help-back-button {
+  list-style-image: url("chrome://communicator/skin/btn1/back.gif");
+}
+
+#help-back-button:hover {
+  list-style-image: url("chrome://communicator/skin/btn1/back-hov.gif");
+}
+
+#help-back-button:hover:active {
+  list-style-image: url("chrome://communicator/skin/btn1/back-act.gif");
+}
+
+#help-back-button[disabled="true"] {
+  list-style-image: url("chrome://communicator/skin/btn1/back-dis.gif") !important;
+}
+
+#help-forward-button {
+  list-style-image: url("chrome://communicator/skin/btn1/forward.gif");
+}
+
+#help-forward-button:hover {
+  list-style-image: url("chrome://communicator/skin/btn1/forward-hov.gif");
+}
+
+#help-forward-button:hover:active {
+  list-style-image: url("chrome://communicator/skin/btn1/forward-act.gif");
+}
+
+#help-forward-button[disabled="true"] {
+  list-style-image: url("chrome://communicator/skin/btn1/forward-dis.gif") !important;
+}
+
+#help-home-button {
+  list-style-image: url("chrome://communicator/skin/btn1/home.gif");
+}
+
+#help-home-button:hover {
+  list-style-image: url("chrome://communicator/skin/btn1/home-hov.gif");
+}
+
+#help-home-button:hover:active {
+  list-style-image: url("chrome://communicator/skin/btn1/home-act.gif");
+}
+
+#help-home-button[disabled="true"] {
+  list-style-image: url("chrome://communicator/skin/btn1/home-dis.gif") !important;
+}
+
+#help-print-button {
+  list-style-image: url("chrome://communicator/skin/btn1/print.gif");
+}
+
+#help-print-button:hover {
+  list-style-image: url("chrome://communicator/skin/btn1/print-hov.gif");
+}
+
+#help-print-button:hover:active {
+  list-style-image: url("chrome://communicator/skin/btn1/print-act.gif");
+}
+
+#help-print-button[disabled="true"] {
+  list-style-image: url("chrome://communicator/skin/btn1/print-dis.gif") !important;
+}
+
+/* ::::: OTHER ::::: */
+
+#context-copy[disabled="true"] {
+  display: none;
+}
+
+/* make findbar appear above content */
+#appcontent {
+  -moz-box-direction: reverse;
+}

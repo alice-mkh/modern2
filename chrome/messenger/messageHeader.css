@@ -1,0 +1,176 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+/* ===== messageHeader.css ==============================================
+  == Styles for the header toolbars of a mail message.
+  ======================================================================= */
+
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+/* ::::: msg header toolbars ::::: */
+
+#collapsedHeaderView,
+#expandedHeaderView {
+  min-width: 1px;
+}
+
+.header-part1 {
+  background-color: #EEEEEE;
+  color: #000000;
+}
+
+/* ::::: msg header buttons ::::: */
+
+#expandedAttachmentBox {
+  width: 20em;
+  height: 0;
+}
+
+#attachmentText {
+  font-weight: bold;
+}
+
+/* ::::: msg header captions ::::: */
+
+#collapsedHeaderView,
+#expandedHeaderView {
+  min-width: 1px;
+  border-bottom: 1px solid #000000;
+}
+
+.headerNameBox {
+  width: 7.7em;
+}
+
+.headerName {
+  margin-top: 0px;
+  margin-bottom: 5px;
+  -moz-margin-start: 0px;
+  -moz-margin-end: .5em;
+  font-weight: bold;
+  text-align: right;
+}
+
+.headerValue {
+  margin: 0;
+  min-width: 50px;
+  white-space: normal;
+}
+
+.headerValueBox {
+  margin: 0 0 5px;
+}
+
+.headerValueBox[singleline="true"] {
+  overflow: hidden;
+}
+
+.subjectvalue {
+  font-weight: bold;
+}
+
+.tagvalue {
+  margin-top: 0;
+  -moz-margin-start: 0;
+}
+
+/* ::::: msg header message ids ::::: */
+
+.messageIdDisplayButton {
+  cursor: pointer;
+  color: blue;
+  text-decoration: underline;
+  margin: 0;
+}
+
+.messageIdDisplayImage {
+  -moz-padding-start: 2px;
+  -moz-box-pack: end;
+}
+
+/* ::::: msg header email addresses ::::: */
+
+.emailDisplayButton {
+  cursor: pointer;
+  color: blue;
+  text-decoration: underline;
+  margin: 0;
+}
+
+.emailDisplayImage {
+  -moz-padding-start: 2px;
+  -moz-box-pack: end;
+}
+
+mail-emailaddress:-moz-focusring {
+  outline: 1px dotted;
+  outline-offset: -1px;
+}
+
+/* ::::: email address twisty ::::: */
+
+.addresstwisty {
+  margin: 2px;
+  list-style-image: url("chrome://global/skin/tree/twisty-clsd.gif");
+}
+
+.addresstwisty[open] {
+  list-style-image: url("chrome://global/skin/tree/twisty-open.gif");
+}
+
+/* ::::: view expand and collapse twisties  ::::: */
+
+.expandHeaderViewButton,
+.collapsedHeaderViewButton  {
+  margin: 2px .5em 0;
+}
+
+.expandHeaderViewButton {
+  list-style-image: url("chrome://global/skin/tree/twisty-open.gif");
+}
+
+.collapsedHeaderViewButton  {
+  list-style-image: url("chrome://global/skin/tree/twisty-clsd.gif");
+}
+
+/* ::::: collapsed view styles ::::: */
+
+#collapsedAttachmentBox {
+  -moz-box-pack: center;
+}
+
+#collapseddateValue {
+  margin: 0 .5em;
+  text-align: right;
+}
+
+#collapseddateValue > .textbox-input-box menupopup {
+  text-align: left;
+}
+
+#collapsedfromBox {
+  width: 18em;
+}
+
+#collapseddateBox {
+  width: 12em;
+}
+
+.collapsedHeaderDisplayName {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  -moz-margin-start: .7em;
+  -moz-margin-end: .5em;
+  min-height: 16px;
+  font-weight: bold;
+}
+
+.collapsedHeaderValue {
+  margin: 0;
+}
+
+.collapsedAttachmentButton {
+  list-style-image: url("chrome://messenger/skin/icons/message-mail-attach.gif");
+  -moz-margin-end: .5em;
+}

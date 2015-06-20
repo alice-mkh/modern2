@@ -1,0 +1,152 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+/* ==== toolbar.css =====================================================
+   == Styles for toolbars that are used throughout the Communicator suite.
+   ====================================================================== */
+
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+/* ::::: toolbar-primary ::::: */
+
+.toolbar-primary {
+  -moz-binding: url("chrome://communicator/skin/toolbar/toolbarBindings.xml#toolbar-primary");
+  background-color: transparent;
+  background-image: none;
+}
+
+.toolbar-primary > .toolbar-holder {
+  border-top: 1px solid #DCEEFF;
+  border-left: none;
+}
+
+.toolbar-primary-image-left,
+.toolbar-primary-image-mid,
+.toolbar-primary-image-right {
+  border-top: 1px solid #DCEEFF;
+}
+
+.toolbar-primary-image-left {
+  width: 10px;
+}
+
+.toolbar-primary-image-left-top {
+  height: 27px;
+  background: url("chrome://communicator/skin/toolbar/prtb-lft-top.gif") no-repeat;
+}
+
+.toolbar-primary-image-left-mid {
+  background: url("chrome://communicator/skin/toolbar/prtb-lft-mid.gif") repeat-y;
+}
+
+.toolbar-primary-image-left-btm {
+  height: 5px;
+  background: url("chrome://communicator/skin/toolbar/prtb-lft-btm.gif") no-repeat;
+}
+
+.toolbar-primary-image-mid-mid {
+  background: url("chrome://communicator/skin/toolbar/prtb-mid-mid.gif") repeat-x;
+  background-color: #5E789B;
+  vertical-align: top !important;
+}
+
+.toolbar-primary-image-mid-btm {
+  height: 3px;
+  background: url("chrome://communicator/skin/toolbar/prtb-mid-btm.gif") repeat-x;
+}
+
+.toolbar-primary-image-right {
+  width: 21px;
+}
+
+.toolbar-primary-image-right-top {
+  height: 27px;
+  background: url("chrome://communicator/skin/toolbar/prtb-rit-top.gif") no-repeat;
+}
+
+.toolbar-primary-image-right-mid {
+  background: url("chrome://communicator/skin/toolbar/prtb-rit-mid.gif") repeat-y;
+}
+
+.toolbar-primary-image-right-btm {
+  height: 8px;
+  background: url("chrome://communicator/skin/toolbar/prtb-rit-btm.gif") no-repeat;
+}
+
+.toolbar-primary-icon {
+  display: none;
+}
+
+toolbar[mode="text"] toolbarbutton[type="menu-button"],
+toolbar[labelalign="end"]:not([mode="icons"]) toolbarbutton[type="menu-button"] {
+  -moz-binding: url("chrome://global/content/bindings/toolbarbutton.xml#menu-button");
+}
+
+toolbar[mode="text"] .toolbarbutton-1 .toolbarbutton-text,
+toolbar[labelalign="end"] .toolbarbutton-1 .toolbarbutton-text {
+  min-width: 0px;
+}
+
+/* ..... the grippy inside of the .toolbar-primary ..... */
+
+.toolbar-primary-grippy {
+  background: url("chrome://communicator/skin/toolbar/grip-prtb-mid.gif") repeat-y;
+}
+
+.toolbar-primary-grippy > .toolbargrippy-top {
+  height: 5px;
+  background: url("chrome://communicator/skin/toolbar/grip-prtb-top.gif") top no-repeat;
+}
+
+.toolbar-primary-grippy > .toolbargrippy-btm {
+  height: 38px;
+  background: url("chrome://communicator/skin/toolbar/grip-prtb-btm.gif") bottom no-repeat;
+}
+
+.toolbar-primary-grippy:hover:active {
+  background-image: url("chrome://communicator/skin/toolbar/grip-prtb-mid-act.gif");
+}
+
+.toolbar-primary-grippy:hover:active > .toolbargrippy-top {
+  background-image: url("chrome://communicator/skin/toolbar/grip-prtb-top-act.gif");
+}
+
+.toolbar-primary-grippy:hover:active > .toolbargrippy-btm {
+  background-image: url("chrome://communicator/skin/toolbar/grip-prtb-btm-act.gif");
+}
+
+/* ::::: toolbar-primary separator ::::: */
+
+.toolbar-primary > toolbarseparator,
+.toolbarseparator-primary,
+.toolbar-primary > toolbarpaletteitem > toolbarseparator {
+    border: none;
+  width: 4px;
+  height: 29px;
+  background: url("chrome://communicator/skin/toolbar/separator-prtb.gif") center no-repeat;
+}
+
+/* ::::: toolbar textbox ::::: */
+
+.toolbar-primary textbox {
+  margin: 3px 8px 4px 2px;
+  background-color: #ffffff;
+  
+  border-image: url("chrome://navigator/skin/toolbar/urlbar.gif") 4 4 3 3 repeat;
+  border-width: 2px 2px 0px 2px;
+  border-image-width: 4px 4px 3px 3px;
+  background-clip: padding-box !important;
+}
+
+/* ::::: solid background status bar panel ::::: */
+
+.statusbarpanel-backgroundbox {
+  -moz-box-align: stretch;
+  padding: 0px;
+}
+
+.statusbarpanel-backgroundbox > .statusbarpanel-contentbox {
+  padding: 0px 4px;
+  -moz-box-align: center;
+}

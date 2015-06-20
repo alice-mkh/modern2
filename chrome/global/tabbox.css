@@ -1,0 +1,134 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+/* ===== tabbox.css =================================================
+  == Styles used by XUL tab-related elements.
+  ======================================================================= */
+
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+/* ::::: tabs ::::: */
+
+tabs {
+  -moz-box-align: end;
+}
+
+.tabs-left {
+  width: 2px;
+  height: 2px;
+  background:
+    url("chrome://global/skin/tabcontrol/tabbox-lft.gif") no-repeat left bottom,
+    url("chrome://global/skin/tabcontrol/tabbox-mid.gif") repeat-x bottom;
+}
+
+.tabs-right {
+  width: 2px;
+  height: 2px;
+  background:
+    url("chrome://global/skin/tabcontrol/tabbox-rit.gif") no-repeat right bottom,
+    url("chrome://global/skin/tabcontrol/tabbox-mid.gif") repeat-x bottom;
+}
+
+/* ::::: tabpanels ::::: */
+
+tabpanels {
+  border-top: none;
+  border-right: 1px solid #313948;
+  border-bottom: 1px solid #313948;
+  border-left: 1px solid #313948;
+  padding: 5px;
+  background-color: #C2D0D0;
+}
+
+/* ::::: tab ::::: */
+
+tab {
+  margin: 0px;
+
+  border: 3px solid transparent;
+  border-radius: 0;
+
+  border-bottom-width: 1px;
+
+  border-image: url("chrome://global/skin/tabcontrol/tab-usel.gif") 19 11 2 10 repeat;
+  border-image-width: 19px 11px 2px 10px;
+
+  background-color: #9BA8AA;
+  background-clip: padding-box;
+
+  padding: 1px 3px;
+  padding-bottom: 3px !important;
+  color: #1C1D1F;
+  font: menu;
+}
+
+.tab-text {
+  margin: 0px !important;
+}
+
+.tab-image {
+  list-style-image: inherit;
+}
+
+/* ..... active state ..... */
+
+tab:hover:active {
+  border-image-source: url("chrome://global/skin/tabcontrol/tab-act.gif");
+  background-color: #7A878C;
+  color: #FEFEFE;
+}
+
+/* ..... selected state ..... */
+
+tab[selected="true"],
+tab[selected="true"]:hover:active {
+  border-image-source: url("chrome://global/skin/tabcontrol/tab-sel.gif");
+  background-color: #C3D1D1;
+  color: #1C1D1F;
+}
+
+/* ::::: tab-bottom ::::::::::
+   :: Tabs that are attached to the bottom of a panel, but not necessarily
+   :: a tabpanels.
+   ::::: */
+
+.tab-bottom {
+  min-height: 21px;
+
+  border-top-width: 1px;
+
+  border-image: url("chrome://global/skin/tabcontrol/tab-bot-usel.gif") 2 11 19 10 repeat;
+  border-image-width: 2px 11px 19px 10px;
+
+  padding-top: 3px;
+}
+
+.tab-bottom:hover:active {
+  background-color: #576E6E;
+  border-image-source: url("chrome://global/skin/tabcontrol/tab-bot-act.gif") !important;
+}
+
+.tab-bottom[selected="true"],
+.tab-bottom[selected="true"]:hover:active {
+  background-color: #C3D1D1;
+  border-image-source: url("chrome://global/skin/tabcontrol/tab-bot-sel.gif") !important;
+}
+
+/* ::::: tabs-bottom ::::: */
+
+.tabs-bottom {
+  -moz-box-align: start;
+}
+
+.tabs-bottom > .tabs-left {
+  background:
+    url("chrome://global/skin/tabcontrol/tabbox-bot-lft.gif") no-repeat left top,
+    url("chrome://global/skin/tabcontrol/tabbox-bot-mid.gif") repeat-x top;
+}
+
+.tabs-bottom > .tabs-right {
+  background:
+    url("chrome://global/skin/tabcontrol/tabbox-bot-rit.gif") no-repeat right top,
+    url("chrome://global/skin/tabcontrol/tabbox-bot-mid.gif") repeat-x top;
+}

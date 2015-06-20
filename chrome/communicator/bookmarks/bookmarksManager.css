@@ -1,0 +1,67 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+
+#placesToolbar {
+  /* match menubar background */
+  background-color: #B4C3D4;
+  border-top: 1px solid #82929C;
+}
+
+#placesToolbar > .toolbar-box > .toolbar-holder {
+  border-top: none;
+  border-left: 1px solid #D6E7FF;
+}
+
+#placesToolbar > .toolbar-box > toolbargrippy {
+  background-image: url("chrome://global/skin/menu/grip-mbar-mid.gif");
+}
+
+#placesToolbar > .toolbar-box > toolbargrippy > .toolbargrippy-top {
+  background-image: url("chrome://global/skin/menu/grip-mbar-top.gif");
+}
+
+#placesToolbar > .toolbar-box > toolbargrippy > .toolbargrippy-btm {
+  background-image: url("chrome://global/skin/menu/grip-mbar-btm.gif");
+}
+
+#placesToolbar > .toolbar-box > toolbargrippy:hover:active {
+  background-image: url("chrome://global/skin/menu/grip-mbar-mid-act.gif");
+}
+
+#placesToolbar > .toolbar-box > toolbargrippy:hover:active > .toolbargrippy-top {
+  background-image: url("chrome://global/skin/menu/grip-mbar-top-act.gif");
+}
+
+#placesToolbar > .toolbar-box > toolbargrippy:hover:active > .toolbargrippy-btm {
+  background-image: url("chrome://global/skin/menu/grip-mbar-btm-act.gif");
+}
+
+#searchFilter {
+  -moz-border-top-colors: #A8B5C6 #757C8A !important;
+  -moz-border-right-colors: #E2E8F0 #757C8A !important;
+  -moz-border-bottom-colors: #E2E8F0 #757C8A !important;
+  -moz-border-left-colors: #A8B5C6 #757C8A !important;
+}
+
+#searchFilter[focused="true"] {
+  -moz-border-top-colors: #96A7BD #000000 !important;
+  -moz-border-right-colors: #96A7BD #000000 !important;
+  -moz-border-bottom-colors: #96A7BD #000000 !important;
+  -moz-border-left-colors: #96A7BD #000000 !important;
+}
+
+/* Info box */
+#detailsDeck {
+  margin: 5px;
+}
+
+#infoBoxExpanderLabel {
+  -moz-padding-start: 2px;
+}
+
+#organizerScopeBar {
+  padding: 2px 0;
+  -moz-padding-end: 3px;
+}

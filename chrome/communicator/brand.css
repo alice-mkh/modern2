@@ -1,0 +1,32 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+/* ==== brand.css ===========================================================
+   == Styles related to branding in the Communicator suite.
+   ========================================================================== */
+
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+#wrapper-throbber-box > #throbber-box > #navigator-throbber,
+#navigator-throbber {
+  -moz-binding: url("chrome://global/content/bindings/button.xml#button-image");
+  -moz-user-focus: ignore !important;
+  margin: 0px 1px 0px 8px;
+  min-width: 0px;
+  list-style-image: url("chrome://communicator/skin/brand/throbber-single.png");
+/*
+  border-image: url("chrome://communicator/skin/brand/throbber-groove.gif") 2 repeat;
+  border-width: 2px;
+  border-image-width: 2px;
+
+  background-color: #637D94;
+  cursor: pointer;
+*/
+  border: none;
+  background: transparent;
+}
+
+#navigator-throbber[busy="true"] {
+  list-style-image: url("chrome://communicator/skin/brand/throbber-anim.png");
+}

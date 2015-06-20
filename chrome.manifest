@@ -1,0 +1,38 @@
+skin	communicator		modern2/1.0	chrome/communicator/
+skin	editor				modern2/1.0	chrome/editor/
+skin	global				modern2/1.0	chrome/global/
+skin	global-platform		modern2/1.0	chrome/global/
+skin	help				modern2/1.0	chrome/help/
+skin	messenger			modern2/1.0	chrome/messenger/
+skin	messenger-newsblog	modern2/1.0	chrome/messenger-newsblog/
+skin	mozapps				modern2/1.0	chrome/mozapps/
+skin	navigator			modern2/1.0	chrome/navigator/
+
+style	chrome://global/content/customizeToolbar.xul		chrome://messenger/skin/addressbook/addressbook.css
+style	chrome://global/content/customizeToolbar.xul		chrome://messenger/skin/messengercompose/messengercompose.css
+style	chrome://global/content/customizeToolbar.xul		chrome://messenger/skin/primaryToolbar.css
+style	chrome://global/content/customizeToolbar.xul		chrome://messenger/skin/smime/msgCompSMIMEOverlay.css
+style	chrome://global/content/customizeToolbar.xul		chrome://navigator/skin/navigator.css
+
+#Fix the new ugly addon manager
+style	chrome://mozapps/content/extensions/extensions.xul	chrome://mozapps/skin/extensions/extensions-new.css appversion>=2.37
+style	about:addons										chrome://mozapps/skin/extensions/extensions-new.css appversion>=2.37
+
+
+
+#Chatzilla
+
+skin	modern2-chatzilla	modern2/1.0	chrome/extensions/chatzilla/
+
+style	chrome://chatzilla/content/chatzillaOverlay.xul		chrome://modern2-chatzilla/skin/chatzillaOverlay.css
+style	chrome://chatzilla/content/browserOverlay.xul		chrome://modern2-chatzilla/skin/browserOverlay.css
+style	chrome://global/content/customizeToolbar.xul		chrome://modern2-chatzilla/skin/browserOverlay.css
+
+
+
+# Lightbird
+
+skin	modern2-lightbird	modern2/1.0	chrome/extensions/lightbird/
+
+style	chrome://lightbird/content/lightbirdOverlay.xul		chrome://modern2-lightbird/skin/lightbird.css
+style	chrome://lightbird/content/tasksOverlay.xul			chrome://modern2-lightbird/skin/lightbird.css

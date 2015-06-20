@@ -1,0 +1,200 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+/* ===== sidebar.css ====================================================
+  == Styles used by the Sidebar panel and Sidebar tabs.
+  ======================================================================= */
+
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+#sidebar-box {
+  margin-top: 0px;
+  border-top: 1px solid #92ABC9;
+  overflow: hidden;
+}
+
+/* ::::: sidebar header ::::: */
+
+.sidebar-header-text {
+  color: #FFFFFF;
+  font-weight: bold;
+  -moz-box-align: center;
+}
+
+.sidebarheader-main {
+  -moz-binding: url("chrome://communicator/skin/sidebar/sidebarBindings.xml#sidebarheader") !important;
+  padding: 0px 0px 2px 18px;
+  background-color: #5C7794;
+}
+
+/* ..... picker button ..... */
+
+#sidebar-panel-picker {
+  margin: 1px;
+  border: 1px solid #5C7794;
+  padding: 2px;
+  color: #FFFFFF;
+}
+
+#sidebar-panel-picker:hover,
+#sidebar-close-button:hover,
+.sidebar-nav-button:hover {
+  border: 1px outset #5C7794;
+}
+
+#sidebar-panel-picker[open="true"],
+#sidebar-close-button:hover:active,
+.sidebar-nav-button:hover:active {
+  border-style: inset;
+}
+
+#sidebar-panel-picker > .toolbarbutton-menu-dropmarker {
+  list-style-image: url("chrome://communicator/skin/sidebar/sbpicker-arrow.gif");
+  -moz-padding-end: 2px;
+  -moz-padding-start: 2px;
+}
+
+/* ..... close button ..... */
+
+#sidebar-close-button {
+  margin: 0px 1px;
+  -moz-binding: url("chrome://global/content/bindings/toolbarbutton.xml#toolbarbutton-image");
+  padding: 0px;
+  list-style-image: url("chrome://communicator/skin/sidebar/sb-close.gif");
+}
+
+#sidebar-close-button > .toolbarbutton-icon {
+  margin: 0px;
+}
+
+/* ::::: loading info ::::: */
+
+.text-panel-loading {
+  margin: 5px 0px;
+}
+
+.text-panel-loading[loading="false"] {
+  -moz-margin-start: 11px;
+}
+
+.image-panel-loading {
+  margin: 5px;
+  list-style-image: url("chrome://communicator/skin/icons/loading.gif");
+}
+
+/* ::::: sidebar panel ::::: */
+
+.iframe-panel {
+  border-bottom: 1px solid #C1C8D5;
+}
+
+.browser-sidebar {
+  border-bottom: 1px solid #C1C8D5;
+}
+
+/* ::::: sidebar tabs ::::: */
+
+/* ..... normal tabs ..... */
+
+.box-texttab {
+  -moz-binding: url("chrome://communicator/skin/sidebar/sidebarBindings.xml#sidebar-tab");
+  border-bottom: 3px solid #5C7794;
+  background-color: #5C7794;
+}
+
+.box-texttab-left {
+  width: 15px;
+  min-height: 18px;
+  background: url("chrome://communicator/skin/sidebar/sbtab-dod-lft.gif") no-repeat top;
+}
+
+.box-texttab-text-container {
+  padding-top: 4px;
+  background-color: #5C7794;
+  background: url("chrome://communicator/skin/sidebar/sbtab-dark.gif") repeat-x;
+  color: #FFFFFF;
+  vertical-align: top !important;
+}
+
+.box-texttab-right {
+  width: 30px;
+  min-height: 18px;
+  background: url("chrome://communicator/skin/sidebar/sbtab-dod-rit.gif") no-repeat top;
+}
+
+/* ..... top tab ..... */
+
+.box-texttab[top-panel="true"] {
+  background-color: #5C7794;
+}
+
+/* ..... bottom tab ..... */
+
+.box-texttab[last-panel="true"] {
+  border-bottom: 7px solid #5C7794;
+}
+
+.box-texttab[last-panel="true"][selected="true"] {
+  border-bottom: none;
+}
+
+/* ..... selected tab ..... */
+
+.box-texttab[selected="true"] {
+  border-bottom: none;
+  min-height: 24px;
+}
+
+.box-texttab[selected="true"] > .box-texttab-left {
+  background: url("chrome://communicator/skin/sidebar/sbtab-lod-lft.gif") #C1C8D5 no-repeat top;
+}
+
+.box-texttab[selected="true"] > .box-texttab-text-container {
+  background: url("chrome://communicator/skin/sidebar/sbtab-light.gif") #C1C8D5 repeat-x;
+  color: #000000;
+}
+
+.box-texttab[selected="true"] > .box-texttab-right {
+  background: url("chrome://communicator/skin/sidebar/sbtab-lod-rit.gif") #C1C8D5 no-repeat top;
+}
+
+/* ..... first tab after selected ..... */
+
+.box-texttab[first-panel-after-selected="true"] {
+  border-top: 1px solid #E7EBF7;
+  background-color: #C1C8D5;
+}
+
+.box-texttab[first-panel-after-selected="true"]  > .box-texttab-left {
+  margin-top: 3px;
+  background: url("chrome://communicator/skin/sidebar/sbtab-dol-lft.gif") #5C7794 no-repeat top;
+}
+
+.box-texttab[first-panel-after-selected="true"]
+> .box-texttab-text-container
+{
+  border-top: 3px solid #C1C8D5;
+  background-color: #5C7794;
+}
+
+.box-texttab[first-panel-after-selected="true"]  > .box-texttab-right {
+  margin-top: 3px;
+  background: url("chrome://communicator/skin/sidebar/sbtab-dol-rit.gif") #5C7794 no-repeat top;
+}
+
+/* ::::: sidebar navigation buttons ::::: */
+
+.sidebar-nav-button {
+  -moz-binding: url("chrome://global/content/bindings/toolbarbutton.xml#toolbarbutton-image");
+  padding: 5px 0px 5px 0px;
+  background-color: #5C7794;
+}
+
+.tab-fwd {
+  list-style-image: url("chrome://communicator/skin/sidebar/sbnav-up.gif");
+}
+
+.tab-back {
+  list-style-image: url("chrome://communicator/skin/sidebar/sbnav-dn.gif");
+}

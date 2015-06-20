@@ -1,0 +1,66 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+/* ===== dialog.css =====================================================
+  == Styles used by the XUL dialog element.
+  ======================================================================= */
+
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+/* ::::: dialog ::::: */
+
+dialog { 
+  padding: 7px 5px 5px;
+}
+
+/* ::::: dialog header ::::: */
+
+dialogheader {
+  margin: 0px 5px 5px;
+  border: 2px solid;
+  -moz-border-top-colors: #6B747E #000000;
+  -moz-border-right-colors: #E3E9EE #000000;
+  -moz-border-bottom-colors: #E3E9EE #000000;
+  -moz-border-left-colors: #6B747E #000000;
+  padding: 5px 8px;
+  background: url("chrome://communicator/skin/dialog/smallheader-bg.gif") repeat-x;
+  color: #000000;
+}
+
+.dialogheader-title {
+  margin: 0px !important;
+  font-size: 120%;
+  font-weight: bold;
+}
+
+/* ::::: large dialog header ::::: */
+
+.header-large {
+  -moz-box-orient: vertical;
+  margin-top: -7px;
+  margin-bottom: 5px;
+  -moz-margin-start: -7px;
+  -moz-margin-end: -5px;
+  border-left: none;
+  border-right: none;
+  border-top-width: 1px;
+  -moz-border-top-colors: #94AACE;
+  border-bottom-width: 1px;
+  -moz-border-bottom-colors: #000000;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  -moz-padding-start: 25px;
+  -moz-padding-end: 5px;
+  background: #5B7693;
+  color: #FFFFFF;
+}
+
+.header-large > .dialogheader-title {
+  font: inherit;
+  font-weight: bold;
+}
+
+.header-large > .dialogheader-description {
+  -moz-margin-start: 12px !important;
+}
