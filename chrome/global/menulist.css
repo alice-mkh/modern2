@@ -105,11 +105,6 @@ html|*.menulist-editable-input {
   font: inherit;
 }
 
-menulist[focused="true"] {
-  outline: 2px solid #96A7BD;
-  -moz-outline-radius: 0px 6px 9px 0px;
-}
-
 /* ::::: compact menulists ::::: */
 
 .menulist-compact {
