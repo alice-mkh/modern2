@@ -52,7 +52,7 @@ html|*.textbox-textarea {
 
 /* ..... focused state ..... */
 
-textbox[focused="true"] {
+textbox[focused="true"]:not([disabled]) {
   -moz-border-top-colors: #96A7BD #000000;
   -moz-border-right-colors: #96A7BD #000000;
   -moz-border-bottom-colors: #96A7BD #000000;
