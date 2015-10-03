@@ -4,6 +4,38 @@
 
 /* ::::: print preview toolbar ::::: */
 
+toolbar[printpreview="true"] {
+  background-color: #B4C3D4;
+  border-top: 1px solid #82929C;
+  border-left: 1px solid #D6E7FF;
+}
+
+toolbar[printpreview="true"] > label,
+toolbar[printpreview="true"] > toolbarbutton,
+toolbar[printpreview="true"] > * > label,
+toolbar[printpreview="true"] > * > toolbarbutton {
+  color: #000000 !important;
+}
+
+toolbar[printpreview="true"] > toolbarseparator,
+toolbar[printpreview="true"] > * > toolbarseparator {
+  border-left: 1px solid #82929C !important;
+  border-right: 1px solid #D6E7FF !important;
+/*  border-left: 1px solid #425973 !important;
+  border-right: 1px solid #92ABC9 !important;*/
+  background: none !important;
+  width: 1px !important;
+  height: 0 !important;
+}
+
+toolbar[printpreview="true"] > textbox,
+toolbar[printpreview="true"] > * > textbox {
+  -moz-border-top-colors: #A8B5C6 #757C8A !important;
+  -moz-border-right-colors: #E2E8F0 #757C8A !important;
+  -moz-border-bottom-colors: #E2E8F0 #757C8A !important;
+  -moz-border-left-colors: #A8B5C6 #757C8A !important;
+}
+
 /* ..... page navigation ..... */
 
 .home-arrow,
