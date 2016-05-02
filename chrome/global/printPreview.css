@@ -36,6 +36,14 @@ toolbar[printpreview="true"] > * > textbox {
   -moz-border-left-colors: #A8B5C6 #757C8A !important;
 }
 
+toolbar[printpreview="true"] > textbox[focused="true"],
+toolbar[printpreview="true"] > * > textbox[focused="true"] {
+  -moz-border-top-colors: #96A7BD #000000 !important;
+  -moz-border-right-colors: #96A7BD #000000 !important;
+  -moz-border-bottom-colors: #96A7BD #000000 !important;
+  -moz-border-left-colors: #96A7BD #000000 !important;
+}
+
 /* ..... page navigation ..... */
 
 .home-arrow,
