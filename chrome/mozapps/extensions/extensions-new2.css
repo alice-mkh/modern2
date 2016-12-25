@@ -1,0 +1,15 @@
+#view-port {
+  background: inherit !important;
+  border: none !important;
+  border-radius: 0 !important;
+}
+
+.view-pane {
+  background-color: #C2D0D0;
+  border: 1px solid #494F5D;
+  border-radius: 5px;
+}
+
+#categories {
+  padding-top: 60px;
+}
