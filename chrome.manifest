@@ -2,7 +2,6 @@ skin	communicator		modern2/1.0	chrome/communicator/
 skin	editor				modern2/1.0	chrome/editor/
 skin	global				modern2/1.0	chrome/global/
 skin	global-platform		modern2/1.0	chrome/global/
-skin	help				modern2/1.0	chrome/help/
 skin	messenger			modern2/1.0	chrome/messenger/
 skin	messenger-newsblog	modern2/1.0	chrome/messenger-newsblog/
 skin	mozapps				modern2/1.0	chrome/mozapps/
@@ -25,6 +24,9 @@ style	chrome://communicator/content/aboutPrivateBrowsing.xul	chrome://communicat
 style	chrome://communicator/content/aboutPrivateBrowsing.xul	chrome://communicator/skin/aboutPrivateBrowsing-old.css	appversion<2.37
 style	about:privatebrowsing									chrome://communicator/skin/aboutPrivateBrowsing-new.css	appversion>=2.37
 style	about:privatebrowsing									chrome://communicator/skin/aboutPrivateBrowsing-old.css	appversion<2.37
+
+#Help styling
+skin	help				modern2/1.0	chrome/help/	appversion<2.47
 
 
 
