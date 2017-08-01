@@ -2,7 +2,7 @@ EXT_ID={a9ecc489-5a88-4c3b-bc1f-a8066681bf1f}
 EXT_NAME=Modern2
 EXT_DESC=A darker Modern theme from old Mozilla builds ported to SeaMonkey
 
-VERSION=0.4.2
+VERSION=0.4.3
 
 SM_ID={92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}
 SM_MIN_VERSION=2.1
