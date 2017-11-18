@@ -51,8 +51,8 @@
 
 #sidebar-panel-picker > .toolbarbutton-menu-dropmarker {
   list-style-image: url("chrome://communicator/skin/sidebar/sbpicker-arrow.gif");
-  -moz-padding-end: 2px;
-  -moz-padding-start: 2px;
+  padding-inline-end: 2px;
+  padding-inline-start: 2px;
 }
 
 /* ..... close button ..... */
@@ -75,7 +75,7 @@
 }
 
 .text-panel-loading[loading="false"] {
-  -moz-margin-start: 11px;
+  margin-inline-start: 11px;
 }
 
 .image-panel-loading {

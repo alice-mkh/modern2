@@ -27,24 +27,24 @@ menulist {
 .menulist-label {
   margin-top: 0px !important;
   margin-bottom: 0px !important;
-  -moz-margin-start: 0px !important;
-  -moz-margin-end: 2px !important;
+  margin-inline-start: 0px !important;
+  margin-inline-end: 2px !important;
 }
 
 .menulist-description {
   font-style: italic;
   color: #5D616E;
-  -moz-margin-start: 1em !important;
+  margin-inline-start: 1em !important;
 }
 
 .menulist-icon {
-  -moz-margin-end: 2px;
+  margin-inline-end: 2px;
 }
 
 .menulist-label-box {
   -moz-box-align: center;
   -moz-box-pack: center;
-  -moz-padding-start: 8px;
+  padding-inline-start: 8px;
 }
 
 .menulist-dropmarker > .dropmarker-icon {
@@ -87,8 +87,8 @@ menulist[disabled="true"]:focus {
   background-color: #FFFFFF;
   padding-top: 2px;
   padding-bottom: 2px;
-  -moz-padding-start: 2px;
-  -moz-padding-end: 0px;
+  padding-inline-start: 2px;
+  padding-inline-end: 0px;
   margin: -2px 6px -2px -4px;
 }
 
@@ -128,8 +128,8 @@ html|*.menulist-editable-input {
 .menulist-compact > .menulist-label {
   margin-top: 0px !important;
   margin-bottom: 0px !important;
-  -moz-margin-start: 0px !important;
-  -moz-margin-end: 3px !important;
+  margin-inline-start: 0px !important;
+  margin-inline-end: 3px !important;
   text-align: end;
 }  
 

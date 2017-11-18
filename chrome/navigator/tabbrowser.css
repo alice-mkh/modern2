@@ -58,7 +58,7 @@ tab:not([selected="true"])[busy] .tab-icon {
 }
 
 .tab-icon {
-  -moz-margin-end: 3px;
+  margin-inline-end: 3px;
   width: 16px;
   height: 16px;
 }
@@ -189,7 +189,7 @@ tab[selected] .tab-close-button:not(:hover) {
 .tabs-newbutton {
   margin: 0px;
   margin-bottom: 2px;
-  -moz-margin-end: 2px;
+  margin-inline-end: 2px;
   padding: 3px 3px;
   border: none;
   list-style-image: url("chrome://navigator/skin/icons/tab-new.gif");
@@ -206,7 +206,7 @@ tab[selected] .tab-close-button:not(:hover) {
 .tab-drop-indicator-bar {
     height: 11px;
     margin-top: -11px;
-    -moz-margin-start: -6px;
+    margin-inline-start: -6px;
     position: relative;
 }
 

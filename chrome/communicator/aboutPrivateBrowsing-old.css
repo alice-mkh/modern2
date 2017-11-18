@@ -23,7 +23,7 @@
 
 #trackWarnBox {
   margin-top: 0.6em;
-  -moz-margin-end: 7em;
+  margin-inline-end: 7em;
   -moz-box-align: center;
 }
 
@@ -37,7 +37,7 @@
 
 #privateTitle,
 #normalTitle {
-  -moz-padding-start: 0px;
+  padding-inline-start: 0px;
   margin: 0 0 .6em;
   font-size: 160%;
   font-weight: bold;
@@ -51,7 +51,7 @@
 }
 
 #warningOuterBox {
-  -moz-padding-start: 3em;
+  padding-inline-start: 3em;
 }
 
 #warningInnerBox > button {
@@ -60,5 +60,5 @@
 
 #warningOuterBox > vbox > label,
 #warningInnerBox > description {
-  -moz-margin-start: 0;
+  margin-inline-start: 0;
 }

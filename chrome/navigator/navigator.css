@@ -193,16 +193,16 @@ toolbar[iconsize="small"] #home-button[disabled="true"] {
 toolbar:not([iconsize="small"]):not([mode="text"]) .toolbarbutton-menubutton-dropmarker {
   margin-top: 24px !important;
   margin-bottom: 3px !important;
-  -moz-margin-start: 20px !important;
-  -moz-margin-end: 1px !important;
+  margin-inline-start: 20px !important;
+  margin-inline-end: 1px !important;
 }
 
 toolbar:not([iconsize="small"]):not([mode="text"]) #back-button .toolbarbutton-menubutton-dropmarker,
 toolbar:not([iconsize="small"]):not([mode="text"]) #forward-button .toolbarbutton-menubutton-dropmarker  {
   margin-top: 26px !important;
   margin-bottom: 1px !important;
-  -moz-margin-start: 23px !important;
-  -moz-margin-end: 2px !important;
+  margin-inline-start: 23px !important;
+  margin-inline-end: 2px !important;
 }
 
 /* ::::: navigator throbber ::::: */
@@ -229,8 +229,8 @@ toolbar:not([iconsize="small"]):not([mode="text"]) .toolbarbutton-1 .toolbarbutt
   -moz-box-align: center;
   padding-top: 0px;
   padding-bottom: 0px;
-  -moz-padding-start: 4px;
-  -moz-padding-end: 2px;
+  padding-inline-start: 4px;
+  padding-inline-end: 2px;
   background-color: #A9B2BD;
   border-left: 2px solid;
   -moz-border-left-colors: #B6BEC5 #DDE3E8;
@@ -312,13 +312,13 @@ toolbar[mode="text"] > #window-controls > toolbarbutton > .toolbarbutton-icon {
 }
 
 .toolbar-primary .nav-bar-first {
-  -moz-margin-start: 5px;
-  -moz-padding-start: 8px;
+  margin-inline-start: 5px;
+  padding-inline-start: 8px;
 }
 
 .toolbar-primary .nav-bar-last {
-  -moz-margin-end: 5px;
-  -moz-padding-end: 5px;
+  margin-inline-end: 5px;
+  padding-inline-end: 5px;
 }
 
 .toolbar-primary .nav-bar-last:-moz-locale-dir(rtl),
@@ -365,7 +365,7 @@ toolbar[mode="text"] > #window-controls > toolbarbutton > .toolbarbutton-icon {
 .popup-notification-icon {
   width: 64px;
   height: 64px;
-  -moz-margin-end: 10px;
+  margin-inline-end: 10px;
 }
 
 .popup-notification-icon[popupid="geolocation"] {
@@ -413,7 +413,7 @@ toolbar[mode="text"] > #window-controls > toolbarbutton > .toolbarbutton-icon {
 
 /* Notification icon box */
 #notification-popup-box {
-  -moz-margin-end: 3px;
+  margin-inline-end: 3px;
 }
 
 .notification-anchor-icon:-moz-focusring {
@@ -475,9 +475,9 @@ toolbar[mode="text"] > #window-controls > toolbarbutton > .toolbarbutton-icon {
 
 .click-to-play-plugins-notification-description-box {
   padding-top: 12px;
-  -moz-padding-end: 11px;
+  padding-inline-end: 11px;
    padding-bottom: 9px;
-  -moz-padding-start: 10px;
+  padding-inline-start: 10px;
 }
 
 .click-to-play-plugins-notification-center-box {
@@ -553,7 +553,7 @@ toolbar[mode="text"] > #window-controls > toolbarbutton > .toolbarbutton-icon {
 
 #page-proxy-deck {
   cursor: grab;
-  -moz-margin-end: 4px;
+  margin-inline-end: 4px;
 }
 
 #page-proxy-button {
@@ -572,7 +572,7 @@ toolbar[mode="text"] > #window-controls > toolbarbutton > .toolbarbutton-icon {
 /* ::::: autocomplete ::::: */
 
 .autocomplete-treebody::-moz-tree-cell-text(value) {
-  -moz-padding-start: 15px;
+  padding-inline-start: 15px;
 }
 
 .autocomplete-treebody::-moz-tree-cell-text(comment) {
@@ -598,7 +598,7 @@ panel[nomatch="true"] > .autocomplete-search-box {
 }
 
 .autocomplete-search-engine-img {
-  -moz-margin-end: 4px;
+  margin-inline-end: 4px;
   width: 16px;
   height: 16px;
 }
@@ -621,8 +621,8 @@ panel[nomatch="true"] > .autocomplete-search-box {
 #search-button {
   margin-top: 0px;
   margin-bottom: 0px;
-  -moz-margin-start: 0px;
-  -moz-margin-end: 4px;
+  margin-inline-start: 0px;
+  margin-inline-end: 4px;
   min-width: 0px;
   font: message-box;
   font-weight: bold;

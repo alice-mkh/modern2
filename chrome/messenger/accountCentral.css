@@ -33,12 +33,12 @@ spacer.big {
 }
 
 .acctCentralRow {
-  -moz-margin-start: 15px;
+  margin-inline-start: 15px;
 }
 
 .acctCentralRowTitleBox {
   background-color: #ABCDEF;
-  -moz-margin-start: -5px;
+  margin-inline-start: -5px;
   font-size: 15px;
   font-weight: bold;
 }

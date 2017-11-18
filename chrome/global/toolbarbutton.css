@@ -20,7 +20,7 @@ toolbarbutton {
 
 .toolbarbutton-icon[label]:not([label=""]),
 .toolbarbutton-icon[type="menu"] {
-  -moz-margin-end: 2px;
+  margin-inline-end: 2px;
 }
 
 .toolbarbutton-text {
@@ -42,8 +42,8 @@ toolbarbutton[open="true"] {
   border: 1px inset #5C7794;
   padding-top: 2px;
   padding-bottom: 0px;
-  -moz-padding-start: 3px;
-  -moz-padding-end: 1px;
+  padding-inline-start: 3px;
+  padding-inline-end: 1px;
 }
 
 toolbarbutton[disabled="true"] {
@@ -100,8 +100,8 @@ toolbarbutton[open="true"] .toolbarbutton-menu-dropmarker {
 
   margin-top: 24px;
   margin-bottom: 13px;
-  -moz-margin-start: 29px;
-  -moz-margin-end: 8px;
+  margin-inline-start: 29px;
+  margin-inline-end: 8px;
 
   padding: 0px;
   border: none !important;
@@ -115,8 +115,8 @@ toolbarbutton[open="true"] .toolbarbutton-menu-dropmarker {
 toolbar[mode="icons"] .toolbarbutton-menubutton-dropmarker {
   margin-top: 24px !important;
   margin-bottom: 3px !important;
-  -moz-margin-start: 20px !important;
-  -moz-margin-end: 1px !important;
+  margin-inline-start: 20px !important;
+  margin-inline-end: 1px !important;
 }
 
 toolbarbutton:hover > .toolbarbutton-menubutton-dropmarker,

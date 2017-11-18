@@ -468,8 +468,8 @@ toolbarbutton.formatting-button[disabled]:hover:active {
 #TextColorButton {
   margin-top: 2px;
   margin-bottom: 9px;
-  -moz-margin-start: 2px;
-  -moz-margin-end: 9px;
+  margin-inline-start: 2px;
+  margin-inline-end: 9px;
 }
 
 #TextColorButton[color="mixed"] {
@@ -480,8 +480,8 @@ toolbarbutton.formatting-button[disabled]:hover:active {
 #BackgroundColorButton {
   margin-top: 9px;
   margin-bottom: 2px;
-  -moz-margin-start: 9px;
-  -moz-margin-end: 2px;
+  margin-inline-start: 9px;
+  margin-inline-end: 2px;
 }
 
 #HighlightColorButton {

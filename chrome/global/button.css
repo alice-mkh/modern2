@@ -21,11 +21,11 @@ button {
 }
 
 .button-icon {
-  -moz-margin-start: 2px;
+  margin-inline-start: 2px;
 }
 
 .button-text {
-  -moz-margin-start: 2px;
+  margin-inline-start: 2px;
   text-align: center;
 }
 
@@ -100,8 +100,8 @@ button[type="menu-button"] {
 .button-menubutton-dropmarker[open="true"] {
   margin-top: 2px;
   margin-bottom: 0px;
-  -moz-margin-start: 2px;
-  -moz-margin-end: 0px;
+  margin-inline-start: 2px;
+  margin-inline-end: 0px;
 }
 
 /* ::::: plain buttons ::::: */
